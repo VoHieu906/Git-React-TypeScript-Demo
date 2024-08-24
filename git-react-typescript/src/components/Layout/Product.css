@@ -1,0 +1,32 @@
+.pagination .page-item .page-link {
+  color: #6c757d; /* Màu chữ mặc định */
+  background-color: transparent;
+  border-color: #dee2e6;
+}
+
+.pagination .page-item.active .page-link {
+  color: #fff; /* Màu chữ khi active */
+  background-color: orange; /* Màu nền khi active */
+  border-color: orange;
+}
+
+.pagination .page-link:hover {
+  color: #495057; /* Màu chữ khi hover */
+  background-color: #e9ecef; /* Màu nền khi hover */
+  border-color: #dee2e6;
+}
+.category-list {
+  list-style: none;
+  padding: 0;
+}
+.category-list li {
+  margin-bottom: 10px;
+}
+.category-list a {
+  color: #343a40;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.category-list a:hover {
+  color: orange;
+}
