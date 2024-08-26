@@ -24,8 +24,16 @@ export default [
       "react-refresh": reactRefresh,
     },
     rules: {
-      "react/jsx-uses-vars": "error",
-      "react/jsx-uses-react": "error",
+      "no-unused-vars": [
+        "error",
+        {
+          vars: "all",
+          args: "after-used",
+          caughtErrors: "all",
+          ignoreRestSiblings: false,
+          reportUsedIgnorePattern: false,
+        },
+      ],
       ...js.configs.recommended.rules,
       ...react.configs.recommended.rules,
       ...react.configs["jsx-runtime"].rules,

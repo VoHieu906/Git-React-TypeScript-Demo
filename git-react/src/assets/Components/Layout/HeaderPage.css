@@ -1,14 +1,13 @@
-.container.dark {
+.container-fluid.dark {
   background: #222;
 }
-.container {
-  width: 100vw;
-  min-height: 100vh;
+.container-fluid {
+  padding: 0px;
   background: #ced8ff;
   transition: 0.5s;
 }
 .dark .header {
-  background: #000;
+  background: #222;
   color: #fff;
 }
 .dark .search-box {
@@ -20,6 +19,14 @@
 .dark .search-box input::placeholder {
   color: #222;
 }
+.dark {
+  color: #fff;
+}
+.dark header {
+  background: #222;
+  transition: 0.5s;
+}
+
 .header {
   width: 100%;
   display: flex;
